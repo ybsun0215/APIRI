@@ -9,7 +9,7 @@
 
 ### Configure Environment
 
- 1. pip install-r requirements.txt
+ 1. `pip install-r requirements.txt`
  2. Fill in the OpenAI key. To ensure efficient program operation, we recommend filling in the different keys for each unit.
 
 ### Running
