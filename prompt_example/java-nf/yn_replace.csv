@@ -1,0 +1,25 @@
+user,assistant
+"API Knowledge:
+javax.servlet.http.Cookie.setMaxAge() is used to set the maximum age of the cookie, which determines how long the cookie will persist.
+javax.servlet.http.HttpSession.setMaxInactiveInterval() is used to set the maximum time interval, in seconds, that the servlet container will keep this session open between client accesses.
+The available scenarios of javax.servlet.http.Cookie.setMaxAge(): need to control how long cookies should persist on the client side.
+The unavailable scenarios of javax.servlet.http.HttpSession.setMaxInactiveInterval(): need to specify a lifespan for a cookie on the client side, as this method is for session management on the server side.
+Q: Do javax.servlet.http.Cookie.setMaxAge() and javax.servlet.http.HttpSession.setMaxInactiveInterval() have similar usage, and can javax.servlet.http.Cookie.setMaxAge() be used in the above unavailable scenarios of javax.servlet.http.HttpSession.setMaxInactiveInterval()?",A: Yes
+"API Knowledge:
+javax.xml.bind.JAXB.marshal() is used to convert a Java object into XML format.
+javax.xml.xpath.XPath.evaluate() is used to evaluate an XPath expression and return the result.
+The available scenarios of javax.xml.bind.JAXB.marshal(): want to serialize a Java object into XML for storage or transmission.
+The unavailable scenarios of javax.xml.xpath.XPath.evaluate(): need to serialize Java objects into XML; this method is for querying XML documents.
+Q: Do javax.xml.bind.JAXB.marshal() and javax.xml.xpath.XPath.evaluate() have similar usage, and can javax.xml.bind.JAXB.marshal() be used in the above unavailable scenarios of javax.xml.xpath.XPath.evaluate()?",A: No
+"API Knowledge:
+javax.sql.DataSource.getConnection() is used to get a database connection from a pool of connections managed by the container or data source.
+java.sql.DriverManager.getConnection() is used to establish a database connection directly using the JDBC URL, username, and password.
+The available scenarios of javax.sql.DataSource.getConnection(): need a database connection that is managed for efficient reuse.
+The unavailable scenarios of java.sql.DriverManager.getConnection(): need a connection from a connection pool for better resource management.
+Q: Do javax.sql.DataSource.getConnection() and java.sql.DriverManager.getConnection() have similar usage, and can javax.sql.DataSource.getConnection() be used in the above unavailable scenarios of java.sql.DriverManager.getConnection()?",A: Yes
+"API Knowledge:
+javax.jms.QueueSender.send() is used to send a message to a JMS queue.
+javax.mail.Transport.send() is used to send an email message.
+The available scenarios of javax.jms.QueueSender.send(): need to send messages to a JMS queue for asynchronous processing.
+The unavailable scenarios of javax.mail.Transport.send(): need to send messages to a messaging system that is not email-based.
+Q: Do javax.jms.QueueSender.send() and javax.mail.Transport.send() have similar usage, and can javax.jms.QueueSender.send() be used in the above unavailable scenarios of javax.mail.Transport.send()?",A: No

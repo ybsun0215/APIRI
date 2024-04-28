@@ -1,0 +1,25 @@
+user,assistant
+"API Knowledge:
+strings.Replace() in Go is used to replace the first n occurrences of old in the string s with new.
+strings.ReplaceAll() in Go is used to replace all occurrences of old in the string s with new.
+The available scenarios of strings.Replace: need to replace a specific number of occurrences in a string.
+The unavailable scenarios of strings.ReplaceAll: need to replace a limited number of occurrences in a string.
+Claim: strings.Replace() and strings.ReplaceAll() have similar usage, and strings.Replace() can be used in the above unavailable scenarios of strings.ReplaceAll().",Answer: Correct
+"API Knowledge:
+bufio.NewScanner() in Go is used to tokenize the input from an io.Reader source, typically used for reading lines.
+bufio.NewReader() in Go is used to create a buffered reader for an io.Reader source, offering more control over reading operations.
+The available scenarios of bufio.NewScanner: need to read and tokenize input line by line.
+The unavailable scenarios of bufio.NewReader: need simple, tokenized input without requiring control over buffering.
+Claim: bufio.NewScanner() and bufio.NewReader() have similar usage, and bufio.NewScanner() can be used in the above unavailable scenarios of bufio.NewReader().",Answer: Incorrect
+"API Knowledge:
+io.WriteString() in Go is used to write a string to the writer.
+fmt.Fprint() in Go is used to write a formatted string to the writer.
+The available scenarios of io.WriteString: need to write a simple string to a writer.
+The unavailable scenarios of fmt.Fprint: need to write a simple string without formatting.
+Claim: io.WriteString() and fmt.Fprint() have similar usage, and io.WriteString() can be used in the above unavailable scenarios of fmt.Fprint().",Answer: Correct
+"API Knowledge:
+ioutil.ReadFile() in Go is used to read the content of a file into a byte slice.
+os.ReadFile() in Go is used to read the content of a file into a byte slice, replacing ioutil.ReadFile.
+The available scenarios of ioutil.ReadFile: need to read the entire content of a file into memory.
+The unavailable scenarios of os.ReadFile: there are no scenarios where os.ReadFile cannot be used in place of ioutil.ReadFile.
+Claim: ioutil.ReadFile and os.ReadFile have similar usage, and ioutil.ReadFile can be used in the above unavailable scenarios of os.ReadFile.",Answer: Incorrect
